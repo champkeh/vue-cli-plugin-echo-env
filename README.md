@@ -1,17 +1,40 @@
-# vue-cli-plugin-qrcode
+# vue-cli-plugin-echo-env
 
-> Vue CLI 3+ Plugin for adding qrcode print to vue-cli-service's serve command.
+> Vue CLI 3+ Plugin that add `echo-env` command to vue-cli-service for easier inspect environment variables.  
 >
-> 为`vue-cli-service`的`serve`命令注入二维码输出，方便手机调试。
+> 为`vue-cli-service`的添加一个`echo-env`命令，用于查看本次构建时最终环境变量的值，方便在配置环境时进行调试。
 
-## install
+## Install
 ```shell script
-vue add @champkeh/qrcode
+vue add @champkeh/echo-env
 ```
 
-## usage
+## Config
+对每一个构建命令都添加对应的`echo-env`命令，可查看对应构建的环境变量。
+
+`package.json`中的`scripts`配置如下：
+```json5
+{
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development vue-cli-service serve --mode development",
+    "build:test": "cross-env NODE_ENV=production vue-cli-service build --mode test",
+    "build:uat": "cross-env NODE_ENV=production vue-cli-service build --mode uat",
+    "build:release": "cross-env NODE_ENV=production vue-cli-service build --mode production",
+    "echo-env:dev": "cross-env NODE_ENV=development vue-cli-service echo-env --mode development",
+    "echo-env:test": "cross-env NODE_ENV=production vue-cli-service echo-env --mode test",
+    "echo-env:uat": "cross-env NODE_ENV=production vue-cli-service echo-env --mode uat",
+    "echo-env:prod": "cross-env NODE_ENV=production vue-cli-service echo-env --mode production"
+  }
+}
+```
+
+## Usage
 ```shell script
-vue-cli-service serve
+# 查看开发环境的配置
+npm run echo-env:dev
+
+# 查看uat环境的配置
+npm run echo-env:uat
 ```
 
 ![图示](./assets/sample.png)
