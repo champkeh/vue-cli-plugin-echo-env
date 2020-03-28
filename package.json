@@ -1,0 +1,32 @@
+{
+  "name": "@champkeh/vue-cli-plugin-echo-env",
+  "version": "0.0.1",
+  "description": "vue-cli plugin to print env vars",
+  "author": "Champkeh <champion.ge@gmail.com>",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/champkeh/vue-cli-plugin-echo-env/issues"
+  },
+  "files": [
+    "index.js",
+    "package.json",
+    "README.md"
+  ],
+  "homepage": "https://github.com/champkeh/vue-cli-plugin-echo-env#readme",
+  "keywords": [
+    "vue",
+    "vue-cli",
+    "vue-cli-plugin",
+    "env",
+    "print env",
+    "echo env"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/champkeh/vue-cli-plugin-echo-env.git"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
+}
