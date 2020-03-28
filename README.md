@@ -36,5 +36,3 @@ npm run echo-env:dev
 # 查看uat环境的配置
 npm run echo-env:uat
 ```
-
-![图示](./assets/sample.png)
