@@ -1,6 +1,6 @@
 {
   "name": "@champkeh/vue-cli-plugin-inspect-env",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "vue-cli plugin to inspect environment variables",
   "author": "Champkeh <champion.ge@gmail.com>",
   "main": "index.js",
@@ -26,7 +26,7 @@
     "type": "git",
     "url": "git+https://github.com/champkeh/vue-cli-plugin-inspect-env.git"
   },
-  "peerDependencies": {
+  "dependencies": {
     "chalk": "^3.0.0"
   }
 }
