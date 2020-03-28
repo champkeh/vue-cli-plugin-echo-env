@@ -26,7 +26,7 @@
     "type": "git",
     "url": "git+https://github.com/champkeh/vue-cli-plugin-echo-env.git"
   },
-  "dependencies": {
+  "peerDependencies": {
     "chalk": "^3.0.0"
   }
 }
