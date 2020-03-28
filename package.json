@@ -1,30 +1,30 @@
 {
-  "name": "@champkeh/vue-cli-plugin-echo-env",
+  "name": "@champkeh/vue-cli-plugin-inspect-env",
   "version": "0.0.2",
-  "description": "vue-cli plugin to print env vars",
+  "description": "vue-cli plugin to inspect environment variables",
   "author": "Champkeh <champion.ge@gmail.com>",
   "main": "index.js",
   "bugs": {
-    "url": "https://github.com/champkeh/vue-cli-plugin-echo-env/issues"
+    "url": "https://github.com/champkeh/vue-cli-plugin-inspect-env/issues"
   },
   "files": [
     "index.js",
     "package.json",
     "README.md"
   ],
-  "homepage": "https://github.com/champkeh/vue-cli-plugin-echo-env#readme",
+  "homepage": "https://github.com/champkeh/vue-cli-plugin-inspect-env#readme",
   "keywords": [
     "vue",
     "vue-cli",
     "vue-cli-plugin",
     "env",
-    "print env",
-    "echo env"
+    "inspect env",
+    "environment variable"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/champkeh/vue-cli-plugin-echo-env.git"
+    "url": "git+https://github.com/champkeh/vue-cli-plugin-inspect-env.git"
   },
   "peerDependencies": {
     "chalk": "^3.0.0"

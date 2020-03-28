@@ -2,7 +2,7 @@ const chalk = require('chalk');
 let _prefix = 'VUE_APP_';
 
 module.exports = (api, projectOptions) => {
-    api.registerCommand('echo-env', args => {
+    api.registerCommand('inspect-env', args => {
         // 获取要检查的变量前缀，默认为 VUE_APP_ (客户端变量)
         _prefix = args.prefix || _prefix;
 
